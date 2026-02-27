@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe 16 — University Canteen Cafe</title>
+  <meta name="description" content="Cafe 16 is a vibrant university canteen cafe serving artisan coffee, fresh food, and good vibes. Your campus hangout spot." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="coffee-cup">☕</div>
+      <p>Brewing something great…</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">16</span>
+        Cafe 16
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#menu" class="btn btn-primary nav-cta">Order Now</a>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="Cafe 16 interior" />
+    </div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="hero-tag">
+          <span class="line"></span>
+          Welcome to Cafe 16
+        </div>
+        <h1>
+          Your Campus <br />
+          <span class="highlight">Comfort Zone</span>
+        </h1>
+        <p>
+          Where great coffee meets campus life. Fuel your study sessions, 
+          celebrate your wins, and make memories — one cup at a time.
+        </p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn btn-primary">Explore Menu ↗</a>
+          <a href="#about" class="btn btn-outline">Our Story →</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="badge-icon">⭐</div>
+        <div class="badge-text">
+          <span class="num">4.9</span>
+          <span class="label">Student Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <img src="images/food-spread.png" alt="Cafe 16 food spread" />
+          <div class="overlay-badge">
+            <div class="big">Est. 2016</div>
+            <div class="small">Serving Campus Since Day 1</div>
+          </div>
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <div class="about-tag">Our Story</div>
+          <h2>More Than Just a <span class="accent-text">Canteen</span></h2>
+          <p>
+            Born inside the heart of the university, Cafe 16 started as a simple 
+            canteen counter and grew into the campus's favourite hangout. We believe 
+            every student deserves great food, real coffee, and a space that feels 
+            like home between lectures.
+          </p>
+          <p>
+            From early-morning espressos to late-night study fuel, we're here 
+            whenever you need us. Our menu is crafted for student life — 
+            affordable, delicious, and always fresh.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="feat-icon">☕</span>
+              <span class="feat-label">Artisan Coffee</span>
+            </div>
+            <div class="about-feature">
+              <span class="feat-icon">🍔</span>
+              <span class="feat-label">Fresh Food Daily</span>
+            </div>
+            <div class="about-feature">
+              <span class="feat-icon">📶</span>
+              <span class="feat-label">Free Wi-Fi</span>
+            </div>
+            <div class="about-feature">
+              <span class="feat-icon">🎵</span>
+              <span class="feat-label">Chill Vibes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section class="menu section-pad" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Serve</span>
+        <h2>Our <span class="accent-text">Menu</span></h2>
+        <p>From classic campus bites to specialty brews — something for every craving.</p>
+      </div>
+
+      <div class="menu-tabs reveal" id="menuTabs">
+        <button class="menu-tab active" data-category="all">All</button>
+        <button class="menu-tab" data-category="coffee">Coffee</button>
+        <button class="menu-tab" data-category="food">Food</button>
+        <button class="menu-tab" data-category="snacks">Snacks</button>
+        <button class="menu-tab" data-category="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPECIALS BANNER ========== -->
+  <section class="specials" id="specials">
+    <div class="specials-bg">
+      <img src="images/coffee.png" alt="Special coffee" />
+    </div>
+    <div class="container">
+      <div class="specials-content reveal">
+        <span class="special-tag">🔥 Today's Special</span>
+        <h2>Student Combo Deal</h2>
+        <p>
+          Show your university ID and get a Combo Meal + Coffee at a 
+          special discounted price. Because students run on coffee and 
+          dreams!
+        </p>
+        <a href="#menu" class="btn btn-primary">Grab The Deal ↗</a>
+        <div class="specials-stats">
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-num" data-count="5000">0</div>
+            <div class="stat-label">Happy Students</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-num" data-count="120">0</div>
+            <div class="stat-label">Menu Items</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-num" data-count="8">0</div>
+            <div class="stat-label">Years on Campus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Captured Moments</span>
+        <h2>Life at <span class="accent-text">Cafe 16</span></h2>
+        <p>Peep our vibe — from golden lattes to late-night study sessions.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <img src="images/hero.png" alt="Cafe interior" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/coffee.png" alt="Latte art" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/burger.png" alt="Gourmet burger" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/pasta.png" alt="Creamy pasta" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/food-spread.png" alt="Food spread" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/sandwich.png" alt="Club sandwich" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/coffee.png" alt="Coffee pour" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/hero.png" alt="Cafe ambiance" />
+          <div class="gallery-overlay">📸</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What Students Say</span>
+        <h2>Campus <span class="accent-text">Reviews</span></h2>
+        <p>Don't take our word for it — hear from our fellow students!</p>
+      </div>
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Find <span class="accent-text">Us</span></h2>
+        <p>We're right on campus. Drop by or send us a message!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form reveal">
+          <h3>Send us a message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@university.edu" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell us what's on your mind…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+              Send Message ✉️
+            </button>
+          </form>
+        </div>
+        <div class="contact-info-cards reveal reveal-delay-1">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>University Main Campus, Block C<br/>Ground Floor, Near Library</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">⏰</div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon — Fri: 8:00 AM – 10:00 PM<br/>Sat — Sun: 9:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Contact</h4>
+              <p>+91 98765 43210<br/>cafe16@university.edu</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📱</div>
+            <div>
+              <h4>Follow Us</h4>
+              <p>@cafe16official on Instagram<br/>Cafe 16 on Facebook</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">
+            <span class="logo-icon" style="width:32px;height:32px;background:linear-gradient(135deg,var(--clr-accent),var(--clr-accent-2));border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--clr-bg);font-weight:800">16</span>
+            Cafe 16
+          </div>
+          <p>Your favourite university canteen cafe. Great coffee, fresh food, and the perfect campus hangout — since 2016.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">🎬</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <a href="#menu">Coffee & Lattes</a>
+          <a href="#menu">Burgers & Wraps</a>
+          <a href="#menu">Pasta & Bowls</a>
+          <a href="#menu">Snacks & Sides</a>
+          <a href="#menu">Fresh Juices</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#contact">Feedback</a>
+          <a href="#">Careers</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Cafe 16. All rights reserved.</span>
+        <span>Made with ☕ on campus</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <a href="#home" class="back-to-top" id="backToTop">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
