@@ -321,6 +321,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // ─── Chatbot Widget Toggle ───
+  const chatbotToggle = document.getElementById("chatbotToggle");
+  const chatbotContainer = document.getElementById("chatbotContainer");
+  const chatbotClose = document.getElementById("chatbotClose");
+
+  if (chatbotToggle && chatbotContainer && chatbotClose) {
+    chatbotToggle.addEventListener("click", () => {
+      const isOpen = chatbotContainer.classList.toggle("open");
+      chatbotToggle.classList.toggle("active", isOpen);
+      // Switch icon between chat and close
+      const icon = document.getElementById("chatbotToggleIcon");
+      icon.textContent = isOpen ? "✕" : "💬";
+    });
+
+    chatbotClose.addEventListener("click", () => {
+      chatbotContainer.classList.remove("open");
+      chatbotToggle.classList.remove("active");
+      document.getElementById("chatbotToggleIcon").textContent = "💬";
+    });
+  }
+
 });
 
 
